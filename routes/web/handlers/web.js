@@ -49,9 +49,16 @@ module.exports.index = {
 	},
 	handler: function (request, reply) {
 		if (!request.auth.isAuthenticated) {
-			return reply.redirect("/signin");
+			//return reply.redirect("/signin");
+			UserService.signin("guest", "guest", "browser").then(token => {
+				reply.view("index").header("authorization", token.token).state(config.tokens.cookieKey ? config.tokens.cookieKey : "token", token.token, config.tokens.cookie).redirect("/");
+			}).catch(err => {
+				console.error(err);
+				reply.view("signin", { error: "Неверное имя пользователя и/или пароль" });
+			});
+		} else {
+			reply.view("index");
 		}
-		reply.view("index");
 	}
 };
 
