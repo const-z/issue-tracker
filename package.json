@@ -1,0 +1,52 @@
+{
+  "name": "issue-tracker",
+  "version": "0.3.0",
+  "description": "ussues status reporter",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "issues",
+    "report"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-sanitize": "^1.5.8",
+    "boom": "^3.2.2",
+    "bootstrap": "^3.3.7",
+    "bootstrap-datepicker": "^1.6.4",
+    "dateformat": "^1.0.12",
+    "ejs": "^2.5.1",
+    "font-awesome": "^4.6.3",
+    "hapi": "^13.4.1",
+    "hapi-auth-jwt2": "^7.0.1",
+    "hoek": "^4.0.1",
+    "inert": "^4.0.2",
+    "joi": "^8.4.2",
+    "jquery": "^3.1.0",
+    "jsonwebtoken": "^7.0.1",
+    "mime": "^1.3.4",
+    "mongoose": "^4.6.0",
+    "node-fetch": "^1.5.3",
+    "roboto-fontface": "^0.6.0",
+    "rootpath": "^0.1.2",
+    "vision": "^4.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-stream": "0.0.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.0"
+  }
+}
