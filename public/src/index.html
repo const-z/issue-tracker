@@ -69,7 +69,7 @@
 	</div>
 	<!-- /container -->
 
-	<div class="col-md-6 col-md-offset-3 timeline">
+	<div class="container timeline">
 		<div class="page-header">
 			<h1 id="timeline">Timeline</h1>
 		</div>
@@ -83,6 +83,7 @@
 					</div>
 					<div class="timeline-body">
 						<p ng-bind-html="issue.content.html"></p>
+						<hr ng-if="!!issue.lastComment"/>
 						<p ng-bind-html="issue.lastComment.content"></p>
 					</div>
 				</div>

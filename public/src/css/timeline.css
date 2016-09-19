@@ -1,3 +1,6 @@
+.container.timeline {
+	max-width: 1200px;
+}
 
 .timeline {
     list-style: none;
@@ -6,7 +9,7 @@
 }
 
 .timeline:before {
-	top: 200px;
+	top: 0;
 	bottom: 0;
 	position: absolute;
 	content: " ";
@@ -185,4 +188,5 @@
 
 .timeline-body p {
 	word-wrap: break-word;
+	text-align: justify;
 }
