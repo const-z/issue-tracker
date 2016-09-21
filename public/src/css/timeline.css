@@ -190,3 +190,8 @@
 	word-wrap: break-word;
 	text-align: justify;
 }
+
+.timeline-body p img {
+	height: auto;
+	max-width: 100%;
+}
